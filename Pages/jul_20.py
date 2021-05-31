@@ -1,8 +1,10 @@
+from enum import auto
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 import requests
 import plotly.express as px
+from streamlit.elements.map import _ZOOM_LEVELS
 
 def show_tweet(link):
     '''Display the contents of a tweet. '''
@@ -30,7 +32,7 @@ def LoadPage():
 
     st.subheader('¿Qué se dijo respecto a la virtualidad?')
 
-    histo_virtualidad = px.histogram(data_virtualidad, x="date", title='Frecuencia de tweets por día', color="sentimiento")
+    histo_virtualidad = px.histogram(data_virtualidad, x="date", title='Frecuencia de tweets por día', color="sentimiento", range_x=['2020-07-01', '2020-12-31'])
     st.write(histo_virtualidad)
 
     st.write("Se sigue observando el mismo patrón de compartamiento en el cual la frecuencia de tweets disminuye durante los fines de semana.")

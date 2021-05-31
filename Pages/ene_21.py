@@ -32,7 +32,7 @@ def LoadPage():
 
     st.subheader('¿Qué se dijo respecto a la virtualidad?')
 
-    histo_virtualidad = px.histogram(data_virtualidad, x="date", title='Frecuencia de tweets por día', color="sentimiento")
+    histo_virtualidad = px.histogram(data_virtualidad, x="date", title='Frecuencia de tweets por día', color="sentimiento", range_x=['2021-01-01', '2021-05-15'])
     st.write(histo_virtualidad)
 
     st.write('Como es de esperarse, durante la época de vacaciones poco se habló del tópico. Podemos observar los picos en el mes de Abril, ¿Qué estuvo pasando en Abril?')
