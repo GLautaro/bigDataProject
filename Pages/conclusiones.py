@@ -15,7 +15,7 @@ def LoadPage():
     st.title('Conclusiones')
 
     st.subheader('💬Política')
-    st.write('Pudimos observar en cómo las decisiones políticas fueron impactando en la opinión de la gente.')
+    st.write('Pudimos observar en cómo las decisiones políticas fueron impactando en la opinión de la gente. Se pudo encontrar una relación entre la frecuencia de tweets publicados y las noticias de un día particular.')
 
     st.subheader('🖥️Virtualidad vs 🏫Presencialidad')
     st.write('En las distintas etapas de la pandemia, fuimos analizando la posición de las personas con respecto a la virtualidad y con respecto a la presencialidad.')
@@ -24,3 +24,12 @@ def LoadPage():
 
     components.html(show_tweet('https://twitter.com/marce_go/status/1338954707491024900'), height=300)
     components.html(show_tweet('https://twitter.com/JulianChaustre/status/1298660855119261697'), height=300)
+
+    st.subheader('📊Sobre el modelo utilizado')
+    st.write('Una de las dificultades inherentes de este analisis es es procesamiento del lenguaje natural (NLP). Para este proyecto se compararon dos modelos y ambos arrojaron resultados similares.')
+    st.write('Para más detalles del modelo dejamos el link al repositorio (https://github.com/aylliote/senti-py)')
+    st.write('Lamentablemente los mejores modelos para NLP, según la comunidad, no soportan el idioma español. De todas formas estos modelos siguen en evolución, ya que es complejo entender el lenguaje humano y sobre todo, los modismos propios de cada país.')
+
+    st.subheader('📚Particularidades de la fuente de datos')
+    st.write('Se scrapearon aproximadamente 500.000 tweets, que contengan las palabras "virtualidad", "presencialidad" y también tweets de perfiles de Noticias locales.')
+    st.write('El resultado negativo que se observó podria deberse a que las opiniones fueron extraidas de la red social de Twitter. Precisamente, los usuarios de Twitter no son de los mas sosegados y tranquilos para opinar.')

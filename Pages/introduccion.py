@@ -8,8 +8,6 @@ def LoadPage():
     st.subheader('Big Data - Trabajo Práctico Integrador')
     st.write('El dilema que tiene hablando a todos los involucrados en el sistema educativo... ¿La virtualidad es el futuro de la educación? '
             '¿Estamos realmente preparados para lo que esto significa? ¿Qué opinan las personas sobre esta "nueva modalidad"?')
-    for i in range(2):
-        st.write('')
 
     st.write("Para responder esta pregunta, dicidimos realizar una investigación en la red social Twitter, ya que es una fuente de información de las opiniones de la gente.")
     st.write("Dividimos nuestro estudio en las etapas del calendario académico, a partir del comienzo de la pandemia:")
