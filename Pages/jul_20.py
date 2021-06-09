@@ -64,3 +64,5 @@ def LoadPage():
     fig_pie_presencialidad = px.pie(data_presencialidad, names='sentimiento', title='Tweets respecto a la presencialidad')
     st.write(fig_pie_presencialidad)
 
+    components.html(show_tweet('https://twitter.com/solezpalacios/status/1339693638113177606'), height=600)
+
