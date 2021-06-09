@@ -17,3 +17,13 @@ def LoadPage():
 
     st.header('💬Sobre la Aplicación')
     st.write('En el menú lateral usted podrá navegar por las distintas etapas de esta investigación.')
+
+    st.subheader('Integrantes del grupo:')
+    st.write('- Azábal, Dahyana')
+    st.write('- González, Lautaro Iván')
+    st.write('- Mellibosky, Joaquín')
+
+    st.subheader('Docentes:')
+    st.write('- Maldonado, Calixto Alejandro')
+    st.write('- Vaca, Pablo Andrés')
+    st.write('- Mana, Franco')
