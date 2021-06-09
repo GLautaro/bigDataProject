@@ -15,12 +15,12 @@ def show_tweet(link):
 
 @st.cache
 def LoadDataVirtualidad():
-    data_jul20_dic20 = pd.read_csv('Data\export_virtualidad_jul20_dic20_sentimiento_2do_model.csv')
+    data_jul20_dic20 = pd.read_csv('https://raw.githubusercontent.com/GLautaro/bigDataProject/master/Data/export_virtualidad_jul20_dic20_sentimiento_2do_model.csv')
     return data_jul20_dic20
 
 @st.cache
 def LoadDataPresencialidad():
-     data_jul20_dic20 = pd.read_csv('Data\export_presencialidad_jul20_dic20_sentimiento_2do_modelo.csv')
+     data_jul20_dic20 = pd.read_csv('https://raw.githubusercontent.com/GLautaro/bigDataProject/master/Data/export_presencialidad_jul20_dic20_sentimiento_2do_modelo.csv')
      data_jul20_dic20 = data_jul20_dic20.sort_values('retweets_count', ascending=False)
      return data_jul20_dic20
 
