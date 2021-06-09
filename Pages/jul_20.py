@@ -59,10 +59,15 @@ def LoadPage():
     st.write(histo_presencialidad)
 
     st.write("En esta etapa del año ya se habló de una manera más constante sobre el tópico de: Presencialidad SÍ o Presencialidad NO.")
-    st.write("Si analizamos la tendencia de los sentimientos en esta etapa obtenemos:")
+
+    st.write("Además, observamos un pico en los días 6 y 7 de Noviembre ¿Qué sucedió en esos días?")
+
+    components.html(show_tweet('https://twitter.com/LANACION/status/1324659007664103424'), height=600)
+
+    st.write("Por último, si analizamos la tendencia de los sentimientos en esta etapa obtenemos:")
     
     fig_pie_presencialidad = px.pie(data_presencialidad, names='sentimiento', title='Tweets respecto a la presencialidad')
     st.write(fig_pie_presencialidad)
-
-    components.html(show_tweet('https://twitter.com/solezpalacios/status/1339693638113177606'), height=600)
+    
+    components.html(show_tweet('https://twitter.com/solezpalacios/status/1339693638113177606'), height=650)
 
